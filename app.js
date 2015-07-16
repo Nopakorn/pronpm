@@ -15,7 +15,7 @@ var ext = /[\w\d_-]+\.[\w\d]+$/;
 http.createServer(function(req, res){
     if (req.url === '/') {
         res.writeHead(200, {'Content-Type': 'text/html'});
-        fs.createReadStream('index.html').pipe(res);
+        fs.createReadStream('app/index.html').pipe(res);
     } else if (ext.test(req.url)) {
         fs.exists(path.join(__dirname, req.url), function (exists) {
             if (exists) {
@@ -30,5 +30,5 @@ http.createServer(function(req, res){
         //  add a RESTful service
     }
 }).listen(8000);
-
+console.log('Server running at http://localhost:8000/');
 
