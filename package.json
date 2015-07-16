@@ -1,0 +1,11 @@
+{
+  "name": "pro-npm",
+  "version": "1.0.0",
+  "description": "this project is create for testing node.js and stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "'latter'"
+  },
+  "author": "guild2015",
+  "license": "ISC"
+}
